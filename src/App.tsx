@@ -47,20 +47,34 @@ export default function App() {
     return initialPhotos;
   });
 
-  // Dedicated photo for Chapter 05 (permanently stored at /public/assets/photos/chapter5.jpg)
+  // Dedicated photo for Chapter 05
   const [chapter5Photo] = useState<PhotoItem>(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY_CHAPTER5);
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        return {
+          ...chapter5PhotoDefault,
+          ...parsed,
+          src: chapter5PhotoDefault.src,
+        };
+      }
     } catch {}
     return chapter5PhotoDefault;
   });
 
-  // Dedicated photo for Final Ending scene (permanently stored at /public/assets/photos/ending.jpg)
+  // Dedicated photo for Final Ending scene
   const [endingPhoto] = useState<PhotoItem>(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY_ENDING);
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        return {
+          ...endingPhotoDefault,
+          ...parsed,
+          src: endingPhotoDefault.src,
+        };
+      }
     } catch {}
     return endingPhotoDefault;
   });

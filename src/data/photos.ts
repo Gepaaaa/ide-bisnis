@@ -1,3 +1,5 @@
+import { embeddedPhotos } from "./embeddedPhotos";
+
 /**
  * Photo Gallery Configuration
  * 
@@ -29,7 +31,7 @@ export interface PhotoItem {
 export const initialPhotos: PhotoItem[] = [
   {
     id: "photo-1",
-    src: "/assets/photos/foto1.jpg",
+    src: embeddedPhotos["foto1"] || "/assets/photos/foto1.jpg",
     caption: "That little side-eye you gave me... I don't know why, but I find it so adorable. ",
     date: "14 Oktober",
     location: "Sudut kafe favorit",
@@ -43,7 +45,7 @@ export const initialPhotos: PhotoItem[] = [
   },
   {
     id: "photo-2",
-    src: "/assets/photos/foto2.jpg",
+    src: embeddedPhotos["foto2"] || "/assets/photos/foto2.jpg",
     caption: "The first photo of you that I took with my own camera.",
     date: "28 November",
     location: "Tepi jendela hujan",
@@ -57,7 +59,7 @@ export const initialPhotos: PhotoItem[] = [
   },
   {
     id: "photo-3",
-    src: "/assets/photos/foto3.jpg",
+    src: embeddedPhotos["foto3"] || "/assets/photos/foto3.jpg",
     caption: "Our very first selfie together. A little moment captured on camera.",
     date: "12 Desember",
     location: "Malam di pinggir kota",
@@ -71,7 +73,7 @@ export const initialPhotos: PhotoItem[] = [
   },
   {
     id: "photo-4",
-    src: "/assets/photos/foto4.jpg",
+    src: embeddedPhotos["foto4"] || "/assets/photos/foto4.jpg",
     caption: "Our very first little photo book together.",
     date: "04 Januari",
     location: "Langkah tanpa tujuan",
@@ -85,7 +87,7 @@ export const initialPhotos: PhotoItem[] = [
   },
   {
     id: "photo-5",
-    src: "/assets/photos/foto5.jpg",
+    src: embeddedPhotos["foto5"] || "/assets/photos/foto5.jpg",
     caption: "Our hands holding each other, and honestly, I never wanna let go. ",
     date: "19 Januari",
     location: "Kopi sore",
@@ -99,7 +101,7 @@ export const initialPhotos: PhotoItem[] = [
   },
   {
     id: "photo-6",
-    src: "/assets/photos/foto6.jpg",
+    src: embeddedPhotos["foto6"] || "/assets/photos/foto6.jpg",
     caption: "I hope we get to lean on each other like this forever. ",
     date: "02 Februari",
     location: "Senja di jalan pulang",
@@ -114,7 +116,7 @@ export const initialPhotos: PhotoItem[] = [
   },
   {
     id: "photo-7",
-    src: "/assets/photos/foto7.jpg",
+    src: embeddedPhotos["foto7"] || "/assets/photos/foto7.jpg",
     caption: "You and your cute little awkward pose at the very first restaurant we went on a date. ",
     date: "14 Februari",
     location: "Buku dan musik",
@@ -128,7 +130,7 @@ export const initialPhotos: PhotoItem[] = [
   },
   {
     id: "photo-8",
-    src: "/assets/photos/foto8.jpg",
+    src: embeddedPhotos["foto8"] || "/assets/photos/foto8.jpg",
     caption: "A little picture of you from behind, just standing there looking out at the ocean. ",
     date: "27 Februari",
     location: "Trotoar malam",
@@ -142,7 +144,7 @@ export const initialPhotos: PhotoItem[] = [
   },
   {
     id: "photo-9",
-    src: "/assets/photos/foto9.jpg",
+    src: embeddedPhotos["foto9"] || "/assets/photos/foto9.jpg",
     caption: "You looking so cute in my jacket, especially how big it looks on you. ",
     date: "10 Maret",
     location: "Angin sejuk",
@@ -156,7 +158,7 @@ export const initialPhotos: PhotoItem[] = [
   },
   {
     id: "photo-10",
-    src: "/assets/photos/foto10.jpg",
+    src: embeddedPhotos["foto10"] || "/assets/photos/foto10.jpg",
     caption: "Our first mirror pic together! One of those little moments I wish we could take a million more of. ",
     date: "22 Maret",
     location: "Siang santai",
@@ -170,7 +172,7 @@ export const initialPhotos: PhotoItem[] = [
   },
   {
     id: "photo-11",
-    src: "/assets/photos/foto11.jpg",
+    src: embeddedPhotos["foto11"] || "/assets/photos/foto11.jpg",
     caption: "One of my favorite selfies of us. You look really pretty here. ",
     date: "05 April",
     location: "Di tengah keramaian",
@@ -184,7 +186,7 @@ export const initialPhotos: PhotoItem[] = [
   },
   {
     id: "photo-12",
-    src: "/assets/photos/foto12.jpg",
+    src: embeddedPhotos["foto12"] || "/assets/photos/foto12.jpg",
     caption: "You getting a little upset because the cat ran away when you tried to get close. ",
     date: "18 April",
     location: "Pagi yang tenang",
@@ -198,7 +200,7 @@ export const initialPhotos: PhotoItem[] = [
   },
   {
     id: "photo-13",
-    src: "/assets/photos/foto13.jpg",
+    src: embeddedPhotos["foto13"] || "/assets/photos/foto13.jpg",
     caption: "You getting bored waiting for the food, looking all pouty and cute. ",
     date: "01 Mei",
     location: "Taman kecil",
@@ -212,7 +214,7 @@ export const initialPhotos: PhotoItem[] = [
   },
   {
     id: "photo-14",
-    src: "/assets/photos/foto14.jpg",
+    src: embeddedPhotos["foto14"] || "/assets/photos/foto14.jpg",
     caption: "A little picture of us at your home. Just a simple moment together. ",
     date: "15 Mei",
     location: "Bawah payung",
@@ -226,7 +228,7 @@ export const initialPhotos: PhotoItem[] = [
   },
   {
     id: "photo-15",
-    src: "/assets/photos/foto15.jpg",
+    src: embeddedPhotos["foto15"] || "/assets/photos/foto15.jpg",
     caption: "Our little photo book, filled with all the moments we've captured together. ",
     date: "02 Juni",
     location: "Bintang malam",
@@ -240,7 +242,7 @@ export const initialPhotos: PhotoItem[] = [
   },
   {
     id: "photo-16",
-    src: "/assets/photos/foto16.jpg",
+    src: embeddedPhotos["foto16"] || "/assets/photos/foto16.jpg",
     caption: "Sorry, but this is just too cute.",
     date: "20 Juni",
     location: "Sudut kenangan",
@@ -256,7 +258,7 @@ export const initialPhotos: PhotoItem[] = [
 
 export const chapter5PhotoDefault: PhotoItem = {
   id: "photo-chapter-5",
-  src: "/assets/photos/chapter5.jpg",
+  src: embeddedPhotos["chapter5"] || "/assets/photos/chapter5.jpg",
   caption: "Out of all the people I could've met, somehow, I got to meet you.",
   date: "Chapter 05",
   location: "Takdir kita",
@@ -271,7 +273,7 @@ export const chapter5PhotoDefault: PhotoItem = {
 
 export const endingPhotoDefault: PhotoItem = {
   id: "photo-ending",
-  src: "/assets/photos/ending.jpg",
+  src: embeddedPhotos["ending"] || "/assets/photos/ending.jpg",
   caption: "Forever in my heart, today, tomorrow, and always.",
   date: "The Last Page",
   location: "A letter for you",
