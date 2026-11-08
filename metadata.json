@@ -1,0 +1,6 @@
+{
+  "name": "A Letter for Her",
+  "description": "A cinematic, interactive love letter experience exploring 'Before You, After You' with synchronized storytelling and photo memories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
