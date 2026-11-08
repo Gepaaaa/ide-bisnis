@@ -116,11 +116,12 @@ export const FinalScene: React.FC<FinalSceneProps> = ({ photo, onReplay }) => {
           </div>
         </div>
 
-        {/* Replay Button */}
-        <div className="mt-16 pb-8">
+        {/* Replay Button (glitch-free, solid backdrop without subpixel blur lines) */}
+        <div className="mt-16 pb-16 flex justify-center">
           <button
+            type="button"
             onClick={onReplay}
-            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-xs uppercase tracking-widest font-medium text-white/80 hover:text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm transition-all hover:scale-105"
+            className="inline-flex items-center gap-2.5 px-7 py-3 rounded-full text-xs uppercase tracking-widest font-medium text-white/90 hover:text-white bg-[#1D1418] hover:bg-[#2A1D23] border border-white/15 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg cursor-pointer select-none"
           >
             <RotateCcw className="w-3.5 h-3.5 text-[#D8B8B2]" />
             <span>Experience it again</span>

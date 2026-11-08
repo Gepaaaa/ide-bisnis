@@ -7,22 +7,25 @@ import { useInView } from "../hooks/useInView";
 interface StoryChapterSceneProps {
   chapter: ChapterData;
   photos: PhotoItem[];
+  specialPhoto?: PhotoItem;
 }
 
 export const StoryChapterScene: React.FC<StoryChapterSceneProps> = ({
   chapter,
   photos,
+  specialPhoto,
 }) => {
   const { ref, isInView } = useInView({ threshold: 0.18 });
 
   // Select context-appropriate photos for each chapter
+  // Chapter 05 uses its own dedicated photo, distinct from the 16 gallery photos
   const featuredPhoto =
     chapter.id === "chapter-02"
       ? photos[1] || photos[0]
       : chapter.id === "chapter-03"
       ? photos[2] || photos[0]
       : chapter.id === "chapter-05"
-      ? photos[5] || photos[0]
+      ? specialPhoto || null
       : null;
 
   const secondaryPhoto =

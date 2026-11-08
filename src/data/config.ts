@@ -29,7 +29,7 @@ export interface AppConfig {
 export const appConfig: AppConfig = {
   // Ganti nama penerima dan pengirim di sini
   recipientName: "Kamu",
-  senderName: "Aku",
+  senderName: "rage",
   websiteTitle: "A Letter for Her",
   subtitle: "Before You, After You.",
   
